@@ -33,6 +33,11 @@
     "Permission:Books.Edit": "Editing the books",
     "Permission:Books.Delete": "Deleting the books",
     "BookDeletionConfirmationMessage": "Are you sure to delete the book '{0}'?",
-    "SuccessfullyDeleted": "Successfully deleted!"
+    "SuccessfullyDeleted": "Successfully deleted!",
+    "BookStore:00001": "There is already an author with the same name: {name}",
+    "Permission:Authors": "Author Management",
+    "Permission:Authors.Create": "Creating new authors",
+    "Permission:Authors.Edit": "Editing the authors",
+    "Permission:Authors.Delete": "Deleting the authors"
   }
 }
