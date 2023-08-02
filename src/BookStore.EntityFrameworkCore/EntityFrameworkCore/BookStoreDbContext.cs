@@ -81,10 +81,11 @@ public class BookStoreDbContext :
         /* Configure your own tables/entities inside here */
         builder.Entity<Book>(b =>
         {
-            b.ToTable(BookStoreConsts.DbTablePrefix + "Books", //eşleme yapıyor bi nevi
-                BookStoreConsts.DbSchema);
+            b.ToTable(BookStoreConsts.DbTablePrefix + "Books", BookStoreConsts.DbSchema);
             b.ConfigureByConvention(); 
             b.Property(x => x.Name).IsRequired().HasMaxLength(128);
+
+            b.HasOne<Author>().WithMany().HasForeignKey(x => x.AuthorId).IsRequired();
         });
 
         builder.Entity<Author>(b =>

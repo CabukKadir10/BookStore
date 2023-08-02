@@ -20,5 +20,6 @@ namespace BookStore.Books.Dtos
 
         [Required]
         public float Price { get; set; }
+        public Guid AuthorId { get; set; }
     }
 }
